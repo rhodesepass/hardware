@@ -39,3 +39,8 @@ fp-info-cache
 *.log
 *.raw
 .svg2shenzhen-cache
+
+electric_pass_baseboard-backups
+bom
+production
+*.pdf

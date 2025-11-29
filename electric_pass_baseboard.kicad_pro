@@ -58,7 +58,12 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "courtyards_overlap|161295000|69955000|8fa2da2f-1bc4-4f7e-b85a-4ee29e76f25b|ccce6126-b315-41ad-af6a-fb4af43b9ad5",
+          "双屏幕连接器 但是只能贴一个"
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -459,7 +464,7 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "warning",
+      "pin_to_pin": "ignore",
       "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
       "similar_label_and_power": "warning",
@@ -507,17 +512,7 @@
       "version": 4
     },
     "net_colors": null,
-    "netclass_assignments": {
-      "/esp8089/ESP_ANT": [
-        "WIFI"
-      ],
-      "/rtl8189ftv/WIFI_ANT": [
-        "WIFI"
-      ],
-      "Net-(AE1-PCB_Trace)": [
-        "WIFI"
-      ]
-    },
+    "netclass_assignments": null,
     "netclass_patterns": []
   },
   "pcbnew": {
@@ -624,7 +619,7 @@
           "show": false
         }
       ],
-      "filter_string": "J",
+      "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": true,
       "name": "",
@@ -695,10 +690,6 @@
     [
       "8190d793-ea2c-4b9c-beb4-f88bd3d4f5ee",
       "soc_peripherals"
-    ],
-    [
-      "ac1f190b-318d-40b0-8c72-76196a83fad8",
-      "rtl8189ftv"
     ]
   ],
   "text_variables": {}

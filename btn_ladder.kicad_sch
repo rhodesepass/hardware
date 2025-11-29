@@ -6,9 +6,11 @@
 	(paper "A4")
 	(title_block
 		(title "明日方舟电子通行证")
-		(date "2025-11-19")
-		(rev "V0.2")
+		(date "2025-11-26")
+		(rev "V0.3.1")
 		(company "Shirogane Tsumugi")
+		(comment 1 "V0.3 添加屏幕兼容接口，添加SD卡槽，优化布线")
+		(comment 2 "V0.3.1 BUG修复")
 	)
 	(lib_symbols
 		(symbol "Device:R_Small"
@@ -692,16 +694,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "AllWinner GPADC(TP):\nVoltage:0~3V\n12 bit"
-		(exclude_from_sim no)
-		(at 190.5 63.754 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "01a5d9cb-a3e7-42a8-8e46-49765f2a6084")
-	)
 	(text "AllWinner KeyADC:\nVoltage:0~3V\n6-bit"
 		(exclude_from_sim no)
 		(at 101.346 53.594 0)
@@ -712,11 +704,27 @@
 		)
 		(uuid "5f9943e0-725c-42ab-9c02-75a783d3fd16")
 	)
+	(text "AllWinner GPADC(TP):\nVoltage:0~3V\n12 bit"
+		(exclude_from_sim no)
+		(at 186.69 70.104 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "dca60cbf-f501-4444-b481-6b339ed74fb9")
+	)
 	(junction
-		(at 133.35 130.81)
+		(at 97.79 107.95)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "2a33a2e4-09b1-4c36-919d-2c8622979a11")
+		(uuid "0476ece6-3988-4a39-8cf4-b7b23e48fce7")
+	)
+	(junction
+		(at 181.61 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "074b4b7b-d4e8-443c-8116-c3e40c897607")
 	)
 	(junction
 		(at 97.79 85.09)
@@ -731,34 +739,10 @@
 		(uuid "662cd70e-9113-4d81-a60b-dd2e1c50e99d")
 	)
 	(junction
-		(at 133.35 119.38)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "71e2fb7e-f53d-4825-93da-9ce768bd34e5")
-	)
-	(junction
-		(at 97.79 119.38)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7efef8d4-57f9-4ccf-bce8-29435f151bee")
-	)
-	(junction
 		(at 97.79 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ba94275f-39c8-4d7c-b9fa-1a3569799483")
-	)
-	(junction
-		(at 133.35 85.09)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "bca47f8e-e494-4b99-b71d-7ed068f1a666")
-	)
-	(junction
-		(at 97.79 107.95)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c890c046-5044-4f4d-b341-0b8e7d3e8892")
 	)
 	(junction
 		(at 97.79 73.66)
@@ -767,16 +751,20 @@
 		(uuid "d302ae0d-d9f3-4fc7-8e5c-e1260d94624e")
 	)
 	(junction
-		(at 185.42 88.9)
+		(at 133.35 120.65)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "e54ec1e5-270f-4baa-9927-3f314546990b")
+		(uuid "e7934065-fb2e-4cf1-a051-f8b4f67e6e31")
 	)
 	(junction
 		(at 133.35 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f392fc29-8761-4fd3-af06-ebb0bd6ac371")
+	)
+	(no_connect
+		(at 106.68 125.73)
+		(uuid "01b08cf7-9c66-4a27-b30f-5230e2fba8ce")
 	)
 	(no_connect
 		(at 121.92 113.03)
@@ -787,40 +775,20 @@
 		(uuid "0d62c24d-345e-46c5-a269-e0abfa95a246")
 	)
 	(no_connect
-		(at 106.68 124.46)
-		(uuid "163e06ad-3b11-4716-b940-91fcd44f89fc")
-	)
-	(no_connect
-		(at 121.92 135.89)
-		(uuid "3a7ddfd3-9dd7-432e-83e3-f347535f944d")
-	)
-	(no_connect
 		(at 121.92 90.17)
 		(uuid "5db16a5d-2967-4700-8cf6-93e4d0d83e5f")
-	)
-	(no_connect
-		(at 121.92 124.46)
-		(uuid "75371496-101c-46fa-b249-79cc65a0e187")
 	)
 	(no_connect
 		(at 106.68 90.17)
 		(uuid "87f7c237-34b1-4f65-9839-0690a5bbf29e")
 	)
 	(no_connect
-		(at 106.68 78.74)
-		(uuid "8b85f9ce-5f16-4187-93db-06805f0f9dbf")
-	)
-	(no_connect
 		(at 106.68 113.03)
 		(uuid "9961dd60-b6e0-47ef-961b-37e6441f4022")
 	)
 	(no_connect
-		(at 106.68 135.89)
-		(uuid "b685729c-1ae7-43a0-bfd5-94bb4f70e2db")
-	)
-	(no_connect
-		(at 121.92 78.74)
-		(uuid "e1b125ce-d16e-4c8f-9cb3-e29d2d99c9bd")
+		(at 121.92 125.73)
+		(uuid "ed9a2b59-5541-4076-a09a-8d3f3c1a25e9")
 	)
 	(no_connect
 		(at 121.92 101.6)
@@ -828,23 +796,13 @@
 	)
 	(wire
 		(pts
-			(xy 97.79 82.55) (xy 97.79 85.09)
+			(xy 97.79 73.66) (xy 97.79 85.09)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "07a34e4b-e459-466d-abf7-9ff1c956e3f4")
-	)
-	(wire
-		(pts
-			(xy 97.79 111.76) (xy 97.79 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "09e9dd91-bd73-4139-a3c0-ef18fc4c641f")
 	)
 	(wire
 		(pts
@@ -858,63 +816,43 @@
 	)
 	(wire
 		(pts
-			(xy 97.79 119.38) (xy 106.68 119.38)
+			(xy 181.61 95.25) (xy 189.23 95.25)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "157906c6-cf0f-4b15-bddd-83a6be6ee546")
+		(uuid "12c1f5b7-da9c-49fd-881c-00262e0263c7")
 	)
 	(wire
 		(pts
-			(xy 133.35 107.95) (xy 133.35 119.38)
+			(xy 97.79 107.95) (xy 97.79 111.76)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "180870d6-19c5-46af-8b04-609e24df49bd")
+		(uuid "3246f446-9e40-40ed-8852-1028ee938388")
 	)
 	(wire
 		(pts
-			(xy 121.92 73.66) (xy 133.35 73.66)
+			(xy 121.92 120.65) (xy 133.35 120.65)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1becf161-b5c1-447c-bbb7-b11308c9c459")
+		(uuid "455151df-10d4-4221-ab67-ad396718e6fa")
 	)
 	(wire
 		(pts
-			(xy 97.79 73.66) (xy 106.68 73.66)
+			(xy 133.35 107.95) (xy 133.35 120.65)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "24fa2549-cddc-4c2c-a0fb-59b66d0df49a")
-	)
-	(wire
-		(pts
-			(xy 97.79 130.81) (xy 106.68 130.81)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4b1b2b9e-6dee-47ac-8709-52c6030aedba")
-	)
-	(wire
-		(pts
-			(xy 97.79 73.66) (xy 97.79 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "50032234-2036-47ed-b411-8da548ed8a7c")
+		(uuid "4f0b18b0-d615-4082-bb5c-aaa3f3ca6cd3")
 	)
 	(wire
 		(pts
@@ -948,16 +886,6 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 88.9) (xy 193.04 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "654381ac-d4cb-42ce-8f92-c0e9d6cf7a04")
-	)
-	(wire
-		(pts
 			(xy 97.79 66.04) (xy 97.79 63.5)
 		)
 		(stroke
@@ -965,6 +893,46 @@
 			(type default)
 		)
 		(uuid "78dfc3a1-02ca-4198-b607-7446e9589d7e")
+	)
+	(wire
+		(pts
+			(xy 97.79 120.65) (xy 106.68 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ae824cb-8b41-45a3-9f99-14a5a1b5b0d5")
+	)
+	(wire
+		(pts
+			(xy 97.79 116.84) (xy 97.79 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d36e25e-d6c2-4e35-b55f-22466595e0d5")
+	)
+	(wire
+		(pts
+			(xy 181.61 95.25) (xy 181.61 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d68dcc7-2910-4ec8-9799-c599c822a1cf")
+	)
+	(wire
+		(pts
+			(xy 181.61 85.09) (xy 181.61 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "87699503-6441-4d7d-be9e-af75265ea288")
 	)
 	(wire
 		(pts
@@ -1018,43 +986,13 @@
 	)
 	(wire
 		(pts
-			(xy 185.42 86.36) (xy 185.42 88.9)
+			(xy 181.61 92.71) (xy 181.61 95.25)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a99d87e2-274a-4923-8329-a296d00137be")
-	)
-	(wire
-		(pts
-			(xy 97.79 116.84) (xy 97.79 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "af14fa2a-8ec3-45fa-bc25-c39bb30abcb3")
-	)
-	(wire
-		(pts
-			(xy 133.35 73.66) (xy 133.35 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b2af0b70-cefc-4f5a-af08-1dd1dc091ca2")
-	)
-	(wire
-		(pts
-			(xy 121.92 130.81) (xy 133.35 130.81)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b5fbafcb-0fe3-4c52-a9c3-7bbe7cfe55a1")
+		(uuid "bbffea39-9ca6-49f7-8acf-137428d7ddcc")
 	)
 	(wire
 		(pts
@@ -1088,13 +1026,13 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 130.81) (xy 133.35 119.38)
+			(xy 133.35 120.65) (xy 133.35 130.81)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d56455f3-8c9f-44b8-b862-250f9a9524f5")
+		(uuid "e6a8b288-0bd8-4e1f-ba5b-eecc639046b1")
 	)
 	(wire
 		(pts
@@ -1108,36 +1046,6 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 119.38) (xy 133.35 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f4443a49-3fdb-406d-aa11-1112859d61b2")
-	)
-	(wire
-		(pts
-			(xy 97.79 125.73) (xy 97.79 130.81)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f78243bb-fa5b-4668-881a-c0926ae514df")
-	)
-	(wire
-		(pts
-			(xy 185.42 78.74) (xy 185.42 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fa25ea0a-91f6-4622-b1ce-c61ab85899d4")
-	)
-	(wire
-		(pts
 			(xy 97.79 96.52) (xy 106.68 96.52)
 		)
 		(stroke
@@ -1145,26 +1053,6 @@
 			(type default)
 		)
 		(uuid "fb7aee9d-187f-4259-83ca-4a7c9f8141d1")
-	)
-	(wire
-		(pts
-			(xy 185.42 88.9) (xy 185.42 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fc58c0c7-16d6-4c11-af62-5f0735fc0211")
-	)
-	(wire
-		(pts
-			(xy 97.79 119.38) (xy 97.79 120.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fcbb08c6-de0f-4dc8-9fee-f59c512fc5d9")
 	)
 	(hierarchical_label "ADCBTN_OUT"
 		(shape output)
@@ -1179,14 +1067,14 @@
 	)
 	(hierarchical_label "ADCBAT"
 		(shape output)
-		(at 193.04 88.9 0)
+		(at 189.23 95.25 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "8d1cbe37-a0ad-4fd7-9ed8-7ccbe88b99ea")
+		(uuid "7cceee2a-c284-4665-b1f7-9aa12230ea98")
 	)
 	(symbol
 		(lib_id "EasyEDA_old:TS24CA")
@@ -1273,7 +1161,7 @@
 	)
 	(symbol
 		(lib_id "power:VBUS")
-		(at 185.42 78.74 0)
+		(at 181.61 85.09 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1281,8 +1169,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0f19089f-90a2-48a8-81cd-5df62dc9b8b0")
-		(property "Reference" "#PWR090"
-			(at 185.42 82.55 0)
+		(property "Reference" "#PWR0126"
+			(at 181.61 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1291,7 +1179,7 @@
 			)
 		)
 		(property "Value" "VBAT_OUT"
-			(at 185.42 73.66 0)
+			(at 181.61 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1299,7 +1187,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 185.42 78.74 0)
+			(at 181.61 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1308,7 +1196,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 185.42 78.74 0)
+			(at 181.61 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1317,7 +1205,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VBUS\""
-			(at 185.42 78.74 0)
+			(at 181.61 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1331,90 +1219,7 @@
 		(instances
 			(project "electric_pass_baseboard"
 				(path "/f7da003d-3223-4ca3-b214-78ea66e67380/26a787ab-6939-443a-aa53-68c50330d2e4"
-					(reference "#PWR090")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "EasyEDA_old:TS24CA")
-		(at 114.3 121.92 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2c784cc2-d859-4d8e-81c8-eb06bb808c4a")
-		(property "Reference" "SW7"
-			(at 114.3 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TS24CA"
-			(at 114.3 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "EasyEDA:SW-SMD_TS24CA"
-			(at 114.3 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Tactile-Switches_SHOU-HAN-TS24CA_C393942.html"
-			(at 114.3 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 114.3 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C393942"
-			(at 114.3 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "38b039bb-1d89-4510-b69d-35bce805b4d1")
-		)
-		(pin "1"
-			(uuid "12150dbd-e711-4430-abb0-e8fe6e6a0ec2")
-		)
-		(pin "3"
-			(uuid "b611cef7-4183-4b5a-a02b-89c4a7be4c83")
-		)
-		(pin "4"
-			(uuid "9ae4783f-092c-4081-9089-966364b3ac12")
-		)
-		(instances
-			(project "electric_pass_baseboard"
-				(path "/f7da003d-3223-4ca3-b214-78ea66e67380/26a787ab-6939-443a-aa53-68c50330d2e4"
-					(reference "SW7")
+					(reference "#PWR0126")
 					(unit 1)
 				)
 			)
@@ -1422,7 +1227,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 185.42 83.82 180)
+		(at 181.61 90.17 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1431,7 +1236,7 @@
 		(fields_autoplaced yes)
 		(uuid "398a8ef3-9f4b-4189-8aae-dfa7e06edb3a")
 		(property "Reference" "R38"
-			(at 187.96 82.5499 0)
+			(at 184.15 88.8999 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -1439,8 +1244,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "47K"
-			(at 187.96 85.0899 0)
+		(property "Value" "68K"
+			(at 184.15 91.4399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1449,7 +1254,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 185.42 83.82 0)
+			(at 181.61 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1458,7 +1263,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 185.42 83.82 0)
+			(at 181.61 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1467,7 +1272,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 185.42 83.82 0)
+			(at 181.61 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1491,218 +1296,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 97.79 80.01 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "415ab824-5ea4-47b3-ae92-8273842abc13")
-		(property "Reference" "R32"
-			(at 100.33 78.7399 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "10K"
-			(at 100.33 81.2799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 97.79 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 97.79 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 97.79 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d1ad6440-eb6b-44cd-acf1-61dbf9f5f9b9")
-		)
-		(pin "2"
-			(uuid "f9b26d8b-bf39-45e2-8e3b-9228674fe42d")
-		)
-		(instances
-			(project "electric_pass_baseboard"
-				(path "/f7da003d-3223-4ca3-b214-78ea66e67380/26a787ab-6939-443a-aa53-68c50330d2e4"
-					(reference "R32")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 97.79 123.19 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5e8f2e7f-2403-4442-ad39-96501c1e97a4")
-		(property "Reference" "R36"
-			(at 100.33 121.9199 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "10K"
-			(at 100.33 124.4599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 97.79 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 97.79 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 97.79 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "96748f9e-6586-49c3-a01a-ea7e129b3a1b")
-		)
-		(pin "2"
-			(uuid "3b3535ac-3bc6-4999-9e0b-18f84a84aea2")
-		)
-		(instances
-			(project "electric_pass_baseboard"
-				(path "/f7da003d-3223-4ca3-b214-78ea66e67380/26a787ab-6939-443a-aa53-68c50330d2e4"
-					(reference "R36")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 97.79 114.3 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "67485502-e8d9-44fd-8a21-da84eeea0c60")
-		(property "Reference" "R35"
-			(at 100.33 113.0299 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "10K"
-			(at 100.33 115.5699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 97.79 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 97.79 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 97.79 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b133e9ef-0917-49f8-a5d4-2cbc8336bb84")
-		)
-		(pin "2"
-			(uuid "a1aac3d0-1b22-4d31-8495-63c03c06db43")
-		)
-		(instances
-			(project "electric_pass_baseboard"
-				(path "/f7da003d-3223-4ca3-b214-78ea66e67380/26a787ab-6939-443a-aa53-68c50330d2e4"
-					(reference "R35")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
-		(at 185.42 96.52 0)
+		(at 181.61 102.87 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1710,8 +1305,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "749ea4ad-ec2f-48db-b1f0-20317a554dd7")
-		(property "Reference" "#PWR091"
-			(at 185.42 102.87 0)
+		(property "Reference" "#PWR0127"
+			(at 181.61 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1720,7 +1315,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 185.42 101.6 0)
+			(at 181.61 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1728,7 +1323,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 185.42 96.52 0)
+			(at 181.61 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1737,7 +1332,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 185.42 96.52 0)
+			(at 181.61 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1746,7 +1341,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 185.42 96.52 0)
+			(at 181.61 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1760,7 +1355,7 @@
 		(instances
 			(project "electric_pass_baseboard"
 				(path "/f7da003d-3223-4ca3-b214-78ea66e67380/26a787ab-6939-443a-aa53-68c50330d2e4"
-					(reference "#PWR091")
+					(reference "#PWR0127")
 					(unit 1)
 				)
 			)
@@ -2004,6 +1599,76 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
+		(at 97.79 114.3 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "af1c581d-2c35-496b-a54a-d2929e1d16c9")
+		(property "Reference" "R44"
+			(at 100.33 113.0299 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10K"
+			(at 100.33 115.5699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 97.79 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 97.79 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 97.79 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7f0928e0-b11e-4d80-93da-504faeae434f")
+		)
+		(pin "2"
+			(uuid "e1ed29ae-a09a-447b-acaf-68814b9e25a7")
+		)
+		(instances
+			(project "electric_pass_baseboard"
+				(path "/f7da003d-3223-4ca3-b214-78ea66e67380/26a787ab-6939-443a-aa53-68c50330d2e4"
+					(reference "R44")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
 		(at 97.79 68.58 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2067,89 +1732,6 @@
 			(project "electric_pass_baseboard"
 				(path "/f7da003d-3223-4ca3-b214-78ea66e67380/26a787ab-6939-443a-aa53-68c50330d2e4"
 					(reference "R31")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "EasyEDA_old:TS24CA")
-		(at 114.3 76.2 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cbd8a2fb-1afc-4358-9c0e-ae2418ae55f5")
-		(property "Reference" "SW3"
-			(at 114.3 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TS24CA"
-			(at 114.3 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "EasyEDA:SW-SMD_TS24CA"
-			(at 114.3 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Tactile-Switches_SHOU-HAN-TS24CA_C393942.html"
-			(at 114.3 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 114.3 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C393942"
-			(at 114.3 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "0625d0ce-3f53-43c1-9df5-85046fdd4749")
-		)
-		(pin "1"
-			(uuid "37888d00-09b4-46fc-9c0f-cc23d3d9b48f")
-		)
-		(pin "3"
-			(uuid "96474c45-9ebc-4519-a2e4-f721c0113b4f")
-		)
-		(pin "4"
-			(uuid "f061b60d-4556-479c-ba2b-8b3cf36f3e13")
-		)
-		(instances
-			(project "electric_pass_baseboard"
-				(path "/f7da003d-3223-4ca3-b214-78ea66e67380/26a787ab-6939-443a-aa53-68c50330d2e4"
-					(reference "SW3")
 					(unit 1)
 				)
 			)
@@ -2220,89 +1802,6 @@
 			(project "electric_pass_baseboard"
 				(path "/f7da003d-3223-4ca3-b214-78ea66e67380/26a787ab-6939-443a-aa53-68c50330d2e4"
 					(reference "R34")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "EasyEDA_old:TS24CA")
-		(at 114.3 133.35 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e1a9eace-8c49-46c4-8b48-107480f69c77")
-		(property "Reference" "SW8"
-			(at 114.3 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TS24CA"
-			(at 114.3 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "EasyEDA:SW-SMD_TS24CA"
-			(at 114.3 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://lcsc.com/product-detail/Tactile-Switches_SHOU-HAN-TS24CA_C393942.html"
-			(at 114.3 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 114.3 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" "C393942"
-			(at 114.3 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "ca3d5676-c7c3-499f-8ddd-64cce689367a")
-		)
-		(pin "1"
-			(uuid "06f380e1-00ff-4b18-9fcc-5eacf36a02dc")
-		)
-		(pin "3"
-			(uuid "886e55ad-b2c8-4f84-8517-2db0e91e457a")
-		)
-		(pin "4"
-			(uuid "dd9a44d6-0509-43e4-9d4a-997ec2e27d3a")
-		)
-		(instances
-			(project "electric_pass_baseboard"
-				(path "/f7da003d-3223-4ca3-b214-78ea66e67380/26a787ab-6939-443a-aa53-68c50330d2e4"
-					(reference "SW8")
 					(unit 1)
 				)
 			)
@@ -2442,7 +1941,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 185.42 93.98 180)
+		(at 181.61 100.33 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2451,7 +1950,7 @@
 		(fields_autoplaced yes)
 		(uuid "ecb728e7-aae0-4005-9486-d71fdb36424d")
 		(property "Reference" "R39"
-			(at 187.96 92.7099 0)
+			(at 184.15 99.0599 0)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -2459,8 +1958,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "47K"
-			(at 187.96 95.2499 0)
+		(property "Value" "68K"
+			(at 184.15 101.5999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2469,7 +1968,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 185.42 93.98 0)
+			(at 181.61 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2478,7 +1977,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 185.42 93.98 0)
+			(at 181.61 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2487,7 +1986,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 185.42 93.98 0)
+			(at 181.61 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2505,6 +2004,89 @@
 			(project "electric_pass_baseboard"
 				(path "/f7da003d-3223-4ca3-b214-78ea66e67380/26a787ab-6939-443a-aa53-68c50330d2e4"
 					(reference "R39")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "EasyEDA_old:TS24CA")
+		(at 114.3 123.19 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f2e44e58-a6ce-4a8b-8f82-3edfaf465bdb")
+		(property "Reference" "SW2"
+			(at 114.3 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TS24CA"
+			(at 114.3 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "EasyEDA:SW-SMD_TS24CA"
+			(at 114.3 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/product-detail/Tactile-Switches_SHOU-HAN-TS24CA_C393942.html"
+			(at 114.3 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 114.3 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" "C393942"
+			(at 114.3 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "5e29abdf-6cfa-45e8-b099-e3e4b37ec78a")
+		)
+		(pin "1"
+			(uuid "b3fa97bf-decf-41a7-9822-3021dfe124de")
+		)
+		(pin "3"
+			(uuid "89ec1aae-afa7-4256-b393-a1b9085794c4")
+		)
+		(pin "4"
+			(uuid "78403f5b-0ee5-4674-a477-6fa0ee2f6835")
+		)
+		(instances
+			(project "electric_pass_baseboard"
+				(path "/f7da003d-3223-4ca3-b214-78ea66e67380/26a787ab-6939-443a-aa53-68c50330d2e4"
+					(reference "SW2")
 					(unit 1)
 				)
 			)

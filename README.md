@@ -2,7 +2,8 @@
 ## 这是什么？
 
 一款类似手机游戏《明日方舟》中的通行认证的电子挂牌。
-![[image-20251119004524288.png]]
+![[image-20251119004524288.png]]<img width="535" height="623" alt="image-20251119004524288" src="https://github.com/user-attachments/assets/7390326c-3a2a-47e5-94ee-92de1e7f142e" />
+
 ## 最新版本
 Ver.0.3
 ## 版本信息&注释
@@ -21,7 +22,9 @@ https://github.com（很显然还没写）
 ## 加入交流群！
 ### 我们的QQ群
 https://qm.qq.com/q/anjgWYaYdG 
+
 或
+
 ```
 1033668603
 ```

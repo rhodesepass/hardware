@@ -9,6 +9,7 @@
 Ver.0.3
 ## 版本信息&注释
 
+[[版本F&Q♿](https://github.com/rhodesepass/hardware/blob/master/Manual/Version/V0.3%20FAQ.md)]
 
 ## 对比上一个版本修改了什么？
 [ / ] SOC F1C100S → F1C200S

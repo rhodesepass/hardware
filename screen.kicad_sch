@@ -11,6 +11,8 @@
 		(company "Shirogane Tsumugi")
 		(comment 1 "V0.3 添加屏幕兼容接口，添加SD卡槽，优化布线")
 		(comment 2 "V0.3.1 BUG修复")
+		(comment 3 "土豆、星语Studio、爱莉希雅、所有复刻群友的支持！")
+		(comment 4 "V0.3.2 生产优化。特别感谢：（不分先后）和光、薄云、烟雨、WXNA、")
 	)
 	(lib_symbols
 		(symbol "Device:C_Small"
@@ -1851,6 +1853,24 @@
 						)
 					)
 				)
+				(pin passive line
+					(at 8.89 -22.86 180)
+					(length 2.54)
+					(name "MP"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "MP"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 				(pin input line
 					(at 8.89 -25.4 180)
 					(length 2.54)
@@ -2653,6 +2673,24 @@
 						)
 					)
 				)
+				(pin passive line
+					(at 8.89 -31.75 180)
+					(length 2.54)
+					(name "MP"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "MP"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 				(pin power_in line
 					(at 8.89 -34.29 180)
 					(length 2.54)
@@ -2741,7 +2779,27 @@
 		)
 		(uuid "7a38c41c-693a-4f76-8b3f-0d85251c7264")
 	)
-	(text "U4 R27 R29 C34 U5 R41 R42 R36 说明：\n若购买的屏幕是老王电子的3元屏，只贴装U4 R27 R29 C34\n若购买的屏幕是通用的ST7701 3寸钢壳屏，只贴装U5 R41 R42 R36"
+	(text "50V耐压！"
+		(exclude_from_sim no)
+		(at 269.24 102.616 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "81bf3d20-2cbb-41a9-b3fe-a1564a5cda68")
+	)
+	(text "SWAP color in F1C TCON"
+		(exclude_from_sim no)
+		(at 135.636 159.004 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "aafe9be8-3861-4d2d-9e4f-39a19f2692b7")
+	)
+	(text "U4 R27 R29 C34 U5 R41 R42 R36 说明：\n若购买的屏幕是老王电子的3元屏，只贴装U4 R27 R29 C34\n若购买的屏幕是通用的ST7701 3寸钢壳屏，只贴装U5 R41 R42 C36"
 		(exclude_from_sim no)
 		(at 66.548 170.688 0)
 		(effects
@@ -2767,6 +2825,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0822f564-953c-4641-a5e4-47b977ae3378")
+	)
+	(junction
+		(at 143.51 142.24)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "122b11fb-e373-479d-bf71-d85849689cf2")
 	)
 	(junction
 		(at 125.73 86.36)
@@ -2841,6 +2905,12 @@
 		(uuid "a812f3c6-c3ce-44c2-8802-0994effd01de")
 	)
 	(junction
+		(at 85.09 140.97)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ad3cdb19-0b5c-4cc0-b3a6-70f56cf61ecc")
+	)
+	(junction
 		(at 125.73 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2875,15 +2945,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fe4211e3-70cc-4ace-ae68-707b2c067918")
-	)
-	(bus_entry
-		(at 200.66 127)
-		(size 2.54 2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b6a25cde-d883-484a-ba42-d1a6ea2e2031")
 	)
 	(wire
 		(pts
@@ -3077,6 +3138,16 @@
 	)
 	(wire
 		(pts
+			(xy 85.09 138.43) (xy 85.09 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "43de0a57-fe58-4ab1-952a-fad45d702e2c")
+	)
+	(wire
+		(pts
 			(xy 116.84 81.28) (xy 125.73 81.28)
 		)
 		(stroke
@@ -3247,6 +3318,16 @@
 	)
 	(wire
 		(pts
+			(xy 143.51 139.7) (xy 143.51 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9adfe651-f7f1-47d4-ad40-0a430e99bc04")
+	)
+	(wire
+		(pts
 			(xy 207.01 127) (xy 207.01 119.38)
 		)
 		(stroke
@@ -3354,6 +3435,16 @@
 			(type default)
 		)
 		(uuid "bda519a1-767a-47bd-9517-8433cc9996bb")
+	)
+	(wire
+		(pts
+			(xy 83.82 138.43) (xy 85.09 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c0bec67f-4189-4808-b595-7bdd9a8427eb")
 	)
 	(wire
 		(pts
@@ -3494,16 +3585,6 @@
 			(justify left bottom)
 		)
 		(uuid "9a7a6a73-21da-4e60-8bdd-4ca247d36faf")
-	)
-	(label "SWAP color in F1C TCON"
-		(at 119.38 160.02 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c14c2f0f-c882-4f72-a267-67409b191d05")
 	)
 	(label "SCREEN_LED_A"
 		(at 143.51 81.28 0)
@@ -4201,6 +4282,9 @@
 		(pin "29"
 			(uuid "2da17efa-4dba-4299-89a5-503a9a1c5ba5")
 		)
+		(pin "MP"
+			(uuid "e1892673-ce94-4f3b-9ef9-366f25e5dbae")
+		)
 		(instances
 			(project ""
 				(path "/f7da003d-3223-4ca3-b214-78ea66e67380/fa3ed526-150d-4543-b531-e278c69ae4cd"
@@ -4295,7 +4379,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF"
+		(property "Value" "1uF"
 			(at 260.35 104.1462 0)
 			(effects
 				(font
@@ -4730,6 +4814,9 @@
 		(pin "36"
 			(uuid "197712ea-e8cc-47b0-89df-2e477698fd71")
 		)
+		(pin "MP"
+			(uuid "7bf1c4d3-7179-420d-8e35-5b5df1fae48f")
+		)
 		(instances
 			(project ""
 				(path "/f7da003d-3223-4ca3-b214-78ea66e67380/fa3ed526-150d-4543-b531-e278c69ae4cd"
@@ -5022,7 +5109,7 @@
 				)
 			)
 		)
-		(property "Value" "1N5819 SS14"
+		(property "Value" "1N5819WS"
 			(at 244.1575 93.98 0)
 			(effects
 				(font

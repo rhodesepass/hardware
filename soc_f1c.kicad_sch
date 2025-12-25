@@ -11,6 +11,8 @@
 		(company "Shirogane Tsumugi")
 		(comment 1 "V0.3 添加屏幕兼容接口，添加SD卡槽，优化布线")
 		(comment 2 "V0.3.1 BUG修复")
+		(comment 3 "土豆、星语Studio、爱莉希雅、所有复刻群友的支持！")
+		(comment 4 "V0.3.2 生产优化。特别感谢：（不分先后）和光、薄云、烟雨、WXNA、")
 	)
 	(lib_symbols
 		(symbol "Device:C_Small"
@@ -4227,8 +4229,8 @@
 		)
 		(uuid "11ed1820-c0fb-4596-8353-bca4f7534203")
 	)
-	(hierarchical_label "I2C_IRQ"
-		(shape input)
+	(hierarchical_label "PWR_SHUTDOWN"
+		(shape output)
 		(at 167.64 151.13 0)
 		(effects
 			(font
@@ -4403,6 +4405,17 @@
 		)
 		(uuid "3ef7fdb5-3ae9-4855-97f5-e9fde0564d60")
 	)
+	(hierarchical_label "LCD_CS"
+		(shape output)
+		(at 125.73 140.97 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4210088e-55d4-4257-824e-bb914fdaac96")
+	)
 	(hierarchical_label "LCD_D6_B4"
 		(shape output)
 		(at 128.27 105.41 180)
@@ -4458,17 +4471,6 @@
 		)
 		(uuid "50b23de1-8cca-4b42-9bf6-7aa269ba67cc")
 	)
-	(hierarchical_label "PE11"
-		(shape output)
-		(at 125.73 140.97 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "57bdb181-43d2-4044-a812-8e60e9fac6dd")
-	)
 	(hierarchical_label "SDIO_D1"
 		(shape output)
 		(at 168.91 123.19 0)
@@ -4479,17 +4481,6 @@
 			(justify left)
 		)
 		(uuid "5b0bf927-f9d9-4f6f-bb5b-f4f0fd8c5bbe")
-	)
-	(hierarchical_label "LCD_CS"
-		(shape output)
-		(at 167.64 153.67 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "681e93ac-fae6-4ef7-a7f8-ff9e455fb030")
 	)
 	(hierarchical_label "SPI_CS"
 		(shape output)
@@ -4622,6 +4613,17 @@
 			(justify left)
 		)
 		(uuid "b83bdf80-6d4d-40cc-a9e2-4df3bae75bb1")
+	)
+	(hierarchical_label "PE3"
+		(shape output)
+		(at 167.64 153.67 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ba98a322-2c32-4419-95d0-b3435d9f44c3")
 	)
 	(hierarchical_label "SPI_MISO"
 		(shape input)

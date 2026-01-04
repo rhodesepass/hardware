@@ -5,14 +5,14 @@
 	(uuid "96b17777-b397-4dc0-adea-6a64f803b813")
 	(paper "A4")
 	(title_block
-		(title "明日方舟电子通行证")
+		(title "明日方舟电子通行证F1C200s Ver")
 		(date "2025-11-26")
 		(rev "V0.3.1")
 		(company "Shirogane Tsumugi")
 		(comment 1 "V0.3 添加屏幕兼容接口，添加SD卡槽，优化布线")
-		(comment 2 "V0.3.1 BUG修复")
-		(comment 3 "V0.3.2（V0.4） 生产优化。")
-		(comment 4 "V0.5 实现按键开关机、低电量关机、拉出i2s")
+		(comment 2 "V0.4 生产优化")
+		(comment 3 "V0.5 实现按键开关机、低电量关机、拉出i2s")
+		(comment 4 "V0.6 添加OVPOCP、重做阻抗走四层板")
 	)
 	(lib_symbols
 		(symbol "Device:C_Small"

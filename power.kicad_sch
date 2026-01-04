@@ -5,14 +5,14 @@
 	(uuid "9635e46a-e802-49ad-885c-1d8ee2d1d708")
 	(paper "A4")
 	(title_block
-		(title "明日方舟电子通行证")
+		(title "明日方舟电子通行证F1C200s Ver")
 		(date "2025-11-26")
 		(rev "V0.3.1")
 		(company "Shirogane Tsumugi")
 		(comment 1 "V0.3 添加屏幕兼容接口，添加SD卡槽，优化布线")
-		(comment 2 "V0.3.1 BUG修复")
-		(comment 3 "V0.3.2（V0.4） 生产优化。")
-		(comment 4 "V0.5 实现按键开关机、低电量关机、拉出i2s")
+		(comment 2 "V0.4 生产优化")
+		(comment 3 "V0.5 实现按键开关机、低电量关机、拉出i2s")
+		(comment 4 "V0.6 添加OVPOCP、重做阻抗走四层板")
 	)
 	(lib_symbols
 		(symbol "Battery_Management:TP4056-42-ESOP8"
@@ -3125,13 +3125,14 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "按键开关机（低压保护也靠这个切断）\n感谢群友：“你说得对”、**星语Studio**\n、土豆、量子！"
+	(text "按键开关机(F1C做AD测量来切断电源）\n感谢群友：“你说得对”、**星语Studio**\n、土豆、量子！"
 		(exclude_from_sim no)
-		(at 81.534 106.934 0)
+		(at 63.246 106.172 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
+			(justify left)
 		)
 		(uuid "11037b6c-3f69-4a26-bc0a-125e469d49a4")
 	)

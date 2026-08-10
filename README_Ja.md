@@ -31,8 +31,8 @@ USB配線は私のKiCad設計よりも優れており、2層基板のみで構�
 
 整理してくれた 星语Studio 氏に感謝！
 
-0603バージョン：https://docs.qq.com/sheet/DTUNVSW9USXBOS3VJ?nlc=1&tab=8444d8
-0402バージョン：https://docs.qq.com/sheet/DTUNVSW9USXBOS3VJ?nlc=1&tab=msd95g
+バージョン0603：https://docs.qq.com/sheet/DTUNVSW9USXBOS3VJ?nlc=1&tab=8444d8  
+バージョン0402：https://docs.qq.com/sheet/DTUNVSW9USXBOS3VJ?nlc=1&tab=msd95g
 
 ## オープンソースライセンス
 

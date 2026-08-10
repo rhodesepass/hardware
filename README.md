@@ -31,7 +31,7 @@ USB布线比我的kicad好，而且只需要二层板。如果你需要查看原
 
 感谢 星语Studio 整理！
 
-0603版本：https://docs.qq.com/sheet/DTUNVSW9USXBOS3VJ?nlc=1&tab=8444d8
+0603版本：https://docs.qq.com/sheet/DTUNVSW9USXBOS3VJ?nlc=1&tab=8444d8  
 0402版本：https://docs.qq.com/sheet/DTUNVSW9USXBOS3VJ?nlc=1&tab=msd95g
 
 ## 开源协议

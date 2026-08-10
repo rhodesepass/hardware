@@ -1,5 +1,9 @@
 # 明日方舟电子通行认证 PCB
 
+<p align="left">
+    <strong>简体中文</strong> | <a href="./README_Ja.md">日本語</a>
+</p>
+
 一款类似手机游戏《明日方舟》中的通行认证的电子挂牌。
 
 当前版本：Ver0.6
